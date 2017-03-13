@@ -3,9 +3,11 @@
 
 CMakeFiles/out.dir/E_Manager.cpp.o
  /Users/ej/Documents/LIBS/glfw/LIB/include/GLFW/glfw3.h
- /Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.cpp
- /Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.h
+ /Users/ej/documents/EJVulkan/E_Manager.cpp
+ /Users/ej/documents/EJVulkan/E_Manager.h
+ /Users/ej/documents/EJVulkan/VDeleter.hpp
 CMakeFiles/out.dir/main.cpp.o
  /Users/ej/Documents/LIBS/glfw/LIB/include/GLFW/glfw3.h
- /Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.h
- /Users/ej/documents/VulkanTEST/VulkanTEST/main.cpp
+ /Users/ej/documents/EJVulkan/E_Manager.h
+ /Users/ej/documents/EJVulkan/VDeleter.hpp
+ /Users/ej/documents/EJVulkan/main.cpp

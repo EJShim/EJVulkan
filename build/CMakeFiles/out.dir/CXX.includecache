@@ -52,19 +52,25 @@ MoltenVK/vulkan/vulkan.h
 vulkan/vulkan.h
 -
 
-/Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.cpp
+/Users/ej/documents/EJVulkan/E_Manager.cpp
 E_Manager.h
-/Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.h
+/Users/ej/documents/EJVulkan/E_Manager.h
+iostream
+-
+
+/Users/ej/documents/EJVulkan/E_Manager.h
+VDeleter.hpp
+/Users/ej/documents/EJVulkan/VDeleter.hpp
+vector
+-
+
+/Users/ej/documents/EJVulkan/VDeleter.hpp
 GLFW/glfw3.h
 -
 iostream
 -
 
-/Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.h
-GLFW/glfw3.h
--
-
-/Users/ej/documents/VulkanTEST/VulkanTEST/main.cpp
+/Users/ej/documents/EJVulkan/main.cpp
 GLFW/glfw3.h
 -
 iostream
@@ -84,5 +90,5 @@ cstring
 set
 -
 E_Manager.h
-/Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.h
+/Users/ej/documents/EJVulkan/E_Manager.h
 

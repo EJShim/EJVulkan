@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.cpp" "/Users/ej/documents/VulkanTEST/VulkanTEST/build/CMakeFiles/out.dir/E_Manager.cpp.o"
-  "/Users/ej/documents/VulkanTEST/VulkanTEST/main.cpp" "/Users/ej/documents/VulkanTEST/VulkanTEST/build/CMakeFiles/out.dir/main.cpp.o"
+  "/Users/ej/documents/EJVulkan/E_Manager.cpp" "/Users/ej/documents/EJVulkan/build/CMakeFiles/out.dir/E_Manager.cpp.o"
+  "/Users/ej/documents/EJVulkan/main.cpp" "/Users/ej/documents/EJVulkan/build/CMakeFiles/out.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.5.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ej/documents/VulkanTEST/VulkanTEST
+CMAKE_SOURCE_DIR = /Users/ej/documents/EJVulkan
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ej/documents/VulkanTEST/VulkanTEST/build
+CMAKE_BINARY_DIR = /Users/ej/documents/EJVulkan/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/out.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/out.dir/flags.make
 
 CMakeFiles/out.dir/main.cpp.o: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ej/documents/VulkanTEST/VulkanTEST/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/out.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/out.dir/main.cpp.o -c /Users/ej/documents/VulkanTEST/VulkanTEST/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ej/documents/EJVulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/out.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/out.dir/main.cpp.o -c /Users/ej/documents/EJVulkan/main.cpp
 
 CMakeFiles/out.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/out.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ej/documents/VulkanTEST/VulkanTEST/main.cpp > CMakeFiles/out.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ej/documents/EJVulkan/main.cpp > CMakeFiles/out.dir/main.cpp.i
 
 CMakeFiles/out.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/out.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ej/documents/VulkanTEST/VulkanTEST/main.cpp -o CMakeFiles/out.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ej/documents/EJVulkan/main.cpp -o CMakeFiles/out.dir/main.cpp.s
 
 CMakeFiles/out.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/out.dir/main.cpp.o.provides.build: CMakeFiles/out.dir/main.cpp.o
 
 CMakeFiles/out.dir/E_Manager.cpp.o: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/E_Manager.cpp.o: ../E_Manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ej/documents/VulkanTEST/VulkanTEST/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/out.dir/E_Manager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/out.dir/E_Manager.cpp.o -c /Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ej/documents/EJVulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/out.dir/E_Manager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/out.dir/E_Manager.cpp.o -c /Users/ej/documents/EJVulkan/E_Manager.cpp
 
 CMakeFiles/out.dir/E_Manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/out.dir/E_Manager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.cpp > CMakeFiles/out.dir/E_Manager.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ej/documents/EJVulkan/E_Manager.cpp > CMakeFiles/out.dir/E_Manager.cpp.i
 
 CMakeFiles/out.dir/E_Manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/out.dir/E_Manager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ej/documents/VulkanTEST/VulkanTEST/E_Manager.cpp -o CMakeFiles/out.dir/E_Manager.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ej/documents/EJVulkan/E_Manager.cpp -o CMakeFiles/out.dir/E_Manager.cpp.s
 
 CMakeFiles/out.dir/E_Manager.cpp.o.requires:
 
@@ -118,7 +118,7 @@ bin/out: CMakeFiles/out.dir/E_Manager.cpp.o
 bin/out: CMakeFiles/out.dir/build.make
 bin/out: /Users/ej/Documents/LIBS/glfw/LIB/lib/libglfw3.a
 bin/out: CMakeFiles/out.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ej/documents/VulkanTEST/VulkanTEST/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/out"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ej/documents/EJVulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/out"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/out.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -136,6 +136,6 @@ CMakeFiles/out.dir/clean:
 .PHONY : CMakeFiles/out.dir/clean
 
 CMakeFiles/out.dir/depend:
-	cd /Users/ej/documents/VulkanTEST/VulkanTEST/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ej/documents/VulkanTEST/VulkanTEST /Users/ej/documents/VulkanTEST/VulkanTEST /Users/ej/documents/VulkanTEST/VulkanTEST/build /Users/ej/documents/VulkanTEST/VulkanTEST/build /Users/ej/documents/VulkanTEST/VulkanTEST/build/CMakeFiles/out.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ej/documents/EJVulkan/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ej/documents/EJVulkan /Users/ej/documents/EJVulkan /Users/ej/documents/EJVulkan/build /Users/ej/documents/EJVulkan/build /Users/ej/documents/EJVulkan/build/CMakeFiles/out.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/out.dir/depend
 

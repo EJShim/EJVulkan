@@ -4,8 +4,10 @@
 CMakeFiles/out.dir/E_Manager.cpp.o: /Users/ej/Documents/LIBS/glfw/LIB/include/GLFW/glfw3.h
 CMakeFiles/out.dir/E_Manager.cpp.o: ../E_Manager.cpp
 CMakeFiles/out.dir/E_Manager.cpp.o: ../E_Manager.h
+CMakeFiles/out.dir/E_Manager.cpp.o: ../VDeleter.hpp
 
 CMakeFiles/out.dir/main.cpp.o: /Users/ej/Documents/LIBS/glfw/LIB/include/GLFW/glfw3.h
 CMakeFiles/out.dir/main.cpp.o: ../E_Manager.h
+CMakeFiles/out.dir/main.cpp.o: ../VDeleter.hpp
 CMakeFiles/out.dir/main.cpp.o: ../main.cpp
 
