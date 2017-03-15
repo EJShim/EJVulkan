@@ -76,7 +76,7 @@ protected:
     void CreateRenderPass();
     void CreateGraphicsPipeLine();
     void CreateFrameBuffers();
-    void CreateCommonPool();
+    void CreateCommandPool();
     void CreateCommandBuffers();
     void CreateSemaphores();
 
@@ -101,6 +101,8 @@ protected:
 
     VkExtent2D ChooseSwapExtent(const VkSurfaceCapabilitiesKHR& capabilities);
 
+    static std::vector<char> ReadFile(const std::string& filename);
+    void CreateShaderModule(const std::vector<char>& code, VDeleter<VkShaderModule>& shaderModule);
 protected:
     GLFWwindow* window;
 

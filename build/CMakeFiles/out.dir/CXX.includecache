@@ -57,6 +57,8 @@ E_Manager.h
 /Users/ej/documents/EJVulkan/E_Manager.h
 iostream
 -
+fstream
+-
 set
 -
 
@@ -81,11 +83,7 @@ stdexcept
 -
 functional
 -
-fstream
--
 algorithm
--
-vector
 -
 cstring
 -
