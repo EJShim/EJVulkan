@@ -3,10 +3,31 @@
 
 #include <vector>
 
+
+
+
 class E_Manager{
-public:
-    const int WIDTH = 1000;
-    const int HEIGHT = 800;
+private:
+    static const int WIDTH = 1000;
+    static const int HEIGHT = 800;
+
+
+    struct QueueFamilyIndices
+    {
+        int graphicsFamily = -1;
+        int presentFamily = -1;
+
+        bool isComplete() {
+            return graphicsFamily >= 0 && presentFamily >= 0;
+        }
+    };
+
+    struct SwapChainSupportDetails
+    {
+        VkSurfaceCapabilitiesKHR capabilities;
+        std::vector<VkSurfaceFormatKHR> formats;
+        std::vector<VkPresentModeKHR> presentModes;
+    };
 
     const std::vector<const char*> validationLayers = {
         "VK_LAYER_LUNARG_standard_validation"
@@ -16,11 +37,21 @@ public:
         VK_KHR_SWAPCHAIN_EXTENSION_NAME
     };
 
+
     #ifdef NDEBUG
     const bool enableValidationLayers = false;
     #else
     const bool enableValidationLayers = true;
     #endif
+
+    static VKAPI_ATTR VkBool32 VKAPI_CALL debugCallback(VkDebugReportFlagsEXT flags, VkDebugReportObjectTypeEXT objType, uint64_t obj, size_t location, int32_t code, const char* layerPrefix, const char* msg, void* userData)
+    {
+        std::cerr << "validation layer: " << msg << std::endl;
+
+        return VK_FALSE;
+    }
+
+
 
 public:
     E_Manager();
@@ -55,6 +86,20 @@ protected:
 
 protected:
     static void DestroyDebugReportCallbackEXT(VkInstance instance, VkDebugReportCallbackEXT callback, const VkAllocationCallbacks* pAllocator);
+
+    std::vector<const char*> GetRequiredExtensions();
+    void DrawFrame();
+
+    bool IsDeviceSuitable(VkPhysicalDevice device);
+    QueueFamilyIndices FindQueueFamilies(VkPhysicalDevice device);
+    bool CheckDeviceExtensionSupport(VkPhysicalDevice device);
+
+    SwapChainSupportDetails QuerySwapChainSupport(VkPhysicalDevice device);
+
+    VkSurfaceFormatKHR ChooseSwapSurfaceFormat(const std::vector<VkSurfaceFormatKHR>& availableFormats);
+    VkPresentModeKHR ChooseSwapPresentMode(const std::vector<VkPresentModeKHR> availablePresentModes);
+
+    VkExtent2D ChooseSwapExtent(const VkSurfaceCapabilitiesKHR& capabilities);
 
 protected:
     GLFWwindow* window;
