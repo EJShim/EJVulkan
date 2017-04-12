@@ -34,6 +34,7 @@ main.cpp
 E_Manager.h
 E_Manager.cpp
 VDeleter.hpp
+vulkan.hpp
 )
 # add_subdirectory(sources)
 
@@ -84,7 +85,11 @@ if (MSVC)
 elseif(APPLE)
   #add MoltenVK.framework from ${VULKAN_ROOT}
   find_library(VULKAN_LIBRARY NAMES MoltenVK PATHS "${VULKAN_ROOT}")
-  target_link_libraries(out ${VULKAN_LIBRARY})
+  set(VULKAN_INCLUDE_DIR "${VULKAN_ROOT}/MoltenVK.framework/Versions/A/Headers")
+  INCLUDE_DIRECTORIES(${VULKAN_INCLUDE_DIR})
+  INCLUDE_DIRECTORIES("/usr/local/include")
 
+
+  target_link_libraries(out ${VULKAN_LIBRARY})
   set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -framework Cocoa -framework OpenGL -framework IOKit -framework Metal -framework QuartzCore")
 endif()

@@ -12,6 +12,8 @@ set(CMAKE_CXX_COMPILER_ID "Clang")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Users/ej/Documents/LIBS/glfw/LIB/include"
+  "/Users/ej/Documents/LIBS/Molten-0.16.1/MoltenVK/macOS/MoltenVK.framework/Versions/A/Headers"
+  "/usr/local/include"
   )
 
 # Targets to which this target links.

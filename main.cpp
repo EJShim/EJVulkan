@@ -1,4 +1,5 @@
 #define GLFW_INCLUDE_VULKAN
+// #include "vulkan.hpp"
 #include <GLFW/glfw3.h>
 
 #include <iostream>
@@ -16,12 +17,6 @@ int main()
 {
     E_Manager* Mgr = new E_Manager();
 
-    // try {
-    //     app.run();
-    // } catch (const std::runtime_error& e) {
-    //     std::cerr << e.what() << std::endl;
-    //     return EXIT_FAILURE;
-    // }
 
     return EXIT_SUCCESS;
 }

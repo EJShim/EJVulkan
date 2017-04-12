@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++14 -isysroot /Applications/Xcode.app/Contents/Developer/Pla
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ej/Documents/LIBS/glfw/LIB/include 
+CXX_INCLUDES = -I/Users/ej/Documents/LIBS/glfw/LIB/include -I/Users/ej/Documents/LIBS/Molten-0.16.1/MoltenVK/macOS/MoltenVK.framework/Versions/A/Headers -I/usr/local/include 
 
