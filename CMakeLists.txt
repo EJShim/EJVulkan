@@ -41,6 +41,7 @@ E_Object.h
 E_Object.cpp
 VDeleter.hpp
 vulkan.hpp
+E_Struct.hpp
 )
 # add_subdirectory(sources)
 

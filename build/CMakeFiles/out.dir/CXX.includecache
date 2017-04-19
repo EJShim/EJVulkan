@@ -135,10 +135,34 @@ E_Renderer.h
 /Users/ej/documents/EJVulkan/E_Renderer.h
 iostream
 -
+set
+-
+fstream
+-
 
 /Users/ej/documents/EJVulkan/E_Renderer.h
+GLFW/glfw3.h
+-
+VDeleter.hpp
+/Users/ej/documents/EJVulkan/VDeleter.hpp
 E_Camera.h
 /Users/ej/documents/EJVulkan/E_Camera.h
+E_Object.h
+/Users/ej/documents/EJVulkan/E_Object.h
+vector
+-
+E_Struct.hpp
+/Users/ej/documents/EJVulkan/E_Struct.hpp
+
+/Users/ej/documents/EJVulkan/E_Struct.hpp
+GLFW/glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+array
+-
 
 /Users/ej/documents/EJVulkan/VDeleter.hpp
 GLFW/glfw3.h
