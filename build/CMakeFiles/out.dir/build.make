@@ -105,20 +105,98 @@ CMakeFiles/out.dir/E_Manager.cpp.o.provides: CMakeFiles/out.dir/E_Manager.cpp.o.
 CMakeFiles/out.dir/E_Manager.cpp.o.provides.build: CMakeFiles/out.dir/E_Manager.cpp.o
 
 
+CMakeFiles/out.dir/E_Renderer.cpp.o: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/E_Renderer.cpp.o: ../E_Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ej/documents/EJVulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/out.dir/E_Renderer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/out.dir/E_Renderer.cpp.o -c /Users/ej/documents/EJVulkan/E_Renderer.cpp
+
+CMakeFiles/out.dir/E_Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/out.dir/E_Renderer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ej/documents/EJVulkan/E_Renderer.cpp > CMakeFiles/out.dir/E_Renderer.cpp.i
+
+CMakeFiles/out.dir/E_Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/out.dir/E_Renderer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ej/documents/EJVulkan/E_Renderer.cpp -o CMakeFiles/out.dir/E_Renderer.cpp.s
+
+CMakeFiles/out.dir/E_Renderer.cpp.o.requires:
+
+.PHONY : CMakeFiles/out.dir/E_Renderer.cpp.o.requires
+
+CMakeFiles/out.dir/E_Renderer.cpp.o.provides: CMakeFiles/out.dir/E_Renderer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Renderer.cpp.o.provides.build
+.PHONY : CMakeFiles/out.dir/E_Renderer.cpp.o.provides
+
+CMakeFiles/out.dir/E_Renderer.cpp.o.provides.build: CMakeFiles/out.dir/E_Renderer.cpp.o
+
+
+CMakeFiles/out.dir/E_Camera.cpp.o: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/E_Camera.cpp.o: ../E_Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ej/documents/EJVulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/out.dir/E_Camera.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/out.dir/E_Camera.cpp.o -c /Users/ej/documents/EJVulkan/E_Camera.cpp
+
+CMakeFiles/out.dir/E_Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/out.dir/E_Camera.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ej/documents/EJVulkan/E_Camera.cpp > CMakeFiles/out.dir/E_Camera.cpp.i
+
+CMakeFiles/out.dir/E_Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/out.dir/E_Camera.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ej/documents/EJVulkan/E_Camera.cpp -o CMakeFiles/out.dir/E_Camera.cpp.s
+
+CMakeFiles/out.dir/E_Camera.cpp.o.requires:
+
+.PHONY : CMakeFiles/out.dir/E_Camera.cpp.o.requires
+
+CMakeFiles/out.dir/E_Camera.cpp.o.provides: CMakeFiles/out.dir/E_Camera.cpp.o.requires
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Camera.cpp.o.provides.build
+.PHONY : CMakeFiles/out.dir/E_Camera.cpp.o.provides
+
+CMakeFiles/out.dir/E_Camera.cpp.o.provides.build: CMakeFiles/out.dir/E_Camera.cpp.o
+
+
+CMakeFiles/out.dir/E_Object.cpp.o: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/E_Object.cpp.o: ../E_Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ej/documents/EJVulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/out.dir/E_Object.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/out.dir/E_Object.cpp.o -c /Users/ej/documents/EJVulkan/E_Object.cpp
+
+CMakeFiles/out.dir/E_Object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/out.dir/E_Object.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ej/documents/EJVulkan/E_Object.cpp > CMakeFiles/out.dir/E_Object.cpp.i
+
+CMakeFiles/out.dir/E_Object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/out.dir/E_Object.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ej/documents/EJVulkan/E_Object.cpp -o CMakeFiles/out.dir/E_Object.cpp.s
+
+CMakeFiles/out.dir/E_Object.cpp.o.requires:
+
+.PHONY : CMakeFiles/out.dir/E_Object.cpp.o.requires
+
+CMakeFiles/out.dir/E_Object.cpp.o.provides: CMakeFiles/out.dir/E_Object.cpp.o.requires
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Object.cpp.o.provides.build
+.PHONY : CMakeFiles/out.dir/E_Object.cpp.o.provides
+
+CMakeFiles/out.dir/E_Object.cpp.o.provides.build: CMakeFiles/out.dir/E_Object.cpp.o
+
+
 # Object files for target out
 out_OBJECTS = \
 "CMakeFiles/out.dir/main.cpp.o" \
-"CMakeFiles/out.dir/E_Manager.cpp.o"
+"CMakeFiles/out.dir/E_Manager.cpp.o" \
+"CMakeFiles/out.dir/E_Renderer.cpp.o" \
+"CMakeFiles/out.dir/E_Camera.cpp.o" \
+"CMakeFiles/out.dir/E_Object.cpp.o"
 
 # External object files for target out
 out_EXTERNAL_OBJECTS =
 
 bin/out: CMakeFiles/out.dir/main.cpp.o
 bin/out: CMakeFiles/out.dir/E_Manager.cpp.o
+bin/out: CMakeFiles/out.dir/E_Renderer.cpp.o
+bin/out: CMakeFiles/out.dir/E_Camera.cpp.o
+bin/out: CMakeFiles/out.dir/E_Object.cpp.o
 bin/out: CMakeFiles/out.dir/build.make
 bin/out: /Users/ej/Documents/LIBS/glfw/LIB/lib/libglfw3.a
 bin/out: CMakeFiles/out.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ej/documents/EJVulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/out"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ej/documents/EJVulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin/out"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/out.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +206,9 @@ CMakeFiles/out.dir/build: bin/out
 
 CMakeFiles/out.dir/requires: CMakeFiles/out.dir/main.cpp.o.requires
 CMakeFiles/out.dir/requires: CMakeFiles/out.dir/E_Manager.cpp.o.requires
+CMakeFiles/out.dir/requires: CMakeFiles/out.dir/E_Renderer.cpp.o.requires
+CMakeFiles/out.dir/requires: CMakeFiles/out.dir/E_Camera.cpp.o.requires
+CMakeFiles/out.dir/requires: CMakeFiles/out.dir/E_Object.cpp.o.requires
 
 .PHONY : CMakeFiles/out.dir/requires
 

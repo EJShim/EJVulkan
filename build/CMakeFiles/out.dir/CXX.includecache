@@ -88,6 +88,14 @@ MoltenVK/vulkan/vulkan.h
 vulkan/vulkan.h
 -
 
+/Users/ej/documents/EJVulkan/E_Camera.cpp
+E_Camera.h
+/Users/ej/documents/EJVulkan/E_Camera.h
+iostream
+-
+
+/Users/ej/documents/EJVulkan/E_Camera.h
+
 /Users/ej/documents/EJVulkan/E_Manager.cpp
 E_Manager.h
 /Users/ej/documents/EJVulkan/E_Manager.h
@@ -99,6 +107,8 @@ set
 -
 
 /Users/ej/documents/EJVulkan/E_Manager.h
+GLFW/glfw3.h
+-
 VDeleter.hpp
 /Users/ej/documents/EJVulkan/VDeleter.hpp
 vector
@@ -112,6 +122,24 @@ glm/gtc/matrix_transform.hpp
 chrono
 -
 
+/Users/ej/documents/EJVulkan/E_Object.cpp
+E_Object.h
+/Users/ej/documents/EJVulkan/E_Object.h
+iostream
+-
+
+/Users/ej/documents/EJVulkan/E_Object.h
+
+/Users/ej/documents/EJVulkan/E_Renderer.cpp
+E_Renderer.h
+/Users/ej/documents/EJVulkan/E_Renderer.h
+iostream
+-
+
+/Users/ej/documents/EJVulkan/E_Renderer.h
+E_Camera.h
+/Users/ej/documents/EJVulkan/E_Camera.h
+
 /Users/ej/documents/EJVulkan/VDeleter.hpp
 GLFW/glfw3.h
 -
@@ -119,22 +147,14 @@ iostream
 -
 
 /Users/ej/documents/EJVulkan/main.cpp
-GLFW/glfw3.h
--
-iostream
--
-stdexcept
--
-functional
--
-algorithm
--
-cstring
--
-set
--
 E_Manager.h
 /Users/ej/documents/EJVulkan/E_Manager.h
+E_Renderer.h
+/Users/ej/documents/EJVulkan/E_Renderer.h
+E_Camera.h
+/Users/ej/documents/EJVulkan/E_Camera.h
+E_Object.h
+/Users/ej/documents/EJVulkan/E_Object.h
 
 /usr/local/include/glm/common.hpp
 detail/func_common.hpp

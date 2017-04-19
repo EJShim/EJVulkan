@@ -1,4 +1,8 @@
 #pragma once
+#define GLFW_INCLUDE_VULKAN
+#include <GLFW/glfw3.h>
+
+
 #include "VDeleter.hpp"
 
 #include <vector>
@@ -187,9 +191,9 @@ public:
 
     const std::vector<Vertex> vertices = {
         {{-0.5f, -0.5f}, {1.0f, 0.0f, 0.0f}},
-        {{0.5f, -0.5f}, {0.0f, 0.0f, 1.0f}},
+        {{0.5f, -0.5f}, {0.0f, 1.0f, 0.0f}},
         {{0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}},
-        {{-0.5f, 0.5f}, {0.0f, 1.0f, 1.0f}}
+        {{-0.5f, 0.5f}, {0.0f, 0.5f, 1.0f}}
     };
 
 

@@ -1,20 +1,20 @@
-#define GLFW_INCLUDE_VULKAN
-// #include "vulkan.hpp"
-#include <GLFW/glfw3.h>
-
-#include <iostream>
-#include <stdexcept>
-#include <functional>
-#include <algorithm>
-#include <cstring>
-#include <set>
-
 ///Include Manager
 #include "E_Manager.h"
+#include "E_Renderer.h"
+#include "E_Camera.h"
+#include "E_Object.h"
 
 
 int main()
 {
+    E_Object* obj = new E_Object();
+    E_Camera* camera = new E_Camera();
+
+    E_Renderer* renderer = new E_Renderer();
+    renderer->AddCamera(camera);
+
+
+    //Previous Code
     E_Manager* Mgr = new E_Manager();
 
 

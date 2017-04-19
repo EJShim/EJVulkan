@@ -33,6 +33,12 @@ add_executable(out
 main.cpp
 E_Manager.h
 E_Manager.cpp
+E_Renderer.h
+E_Renderer.cpp
+E_Camera.h
+E_Camera.cpp
+E_Object.h
+E_Object.cpp
 VDeleter.hpp
 vulkan.hpp
 )

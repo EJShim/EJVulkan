@@ -123,6 +123,33 @@ out/fast:
 	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/build
 .PHONY : out/fast
 
+E_Camera.o: E_Camera.cpp.o
+
+.PHONY : E_Camera.o
+
+# target to build an object file
+E_Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Camera.cpp.o
+.PHONY : E_Camera.cpp.o
+
+E_Camera.i: E_Camera.cpp.i
+
+.PHONY : E_Camera.i
+
+# target to preprocess a source file
+E_Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Camera.cpp.i
+.PHONY : E_Camera.cpp.i
+
+E_Camera.s: E_Camera.cpp.s
+
+.PHONY : E_Camera.s
+
+# target to generate assembly for a file
+E_Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Camera.cpp.s
+.PHONY : E_Camera.cpp.s
+
 E_Manager.o: E_Manager.cpp.o
 
 .PHONY : E_Manager.o
@@ -149,6 +176,60 @@ E_Manager.s: E_Manager.cpp.s
 E_Manager.cpp.s:
 	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Manager.cpp.s
 .PHONY : E_Manager.cpp.s
+
+E_Object.o: E_Object.cpp.o
+
+.PHONY : E_Object.o
+
+# target to build an object file
+E_Object.cpp.o:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Object.cpp.o
+.PHONY : E_Object.cpp.o
+
+E_Object.i: E_Object.cpp.i
+
+.PHONY : E_Object.i
+
+# target to preprocess a source file
+E_Object.cpp.i:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Object.cpp.i
+.PHONY : E_Object.cpp.i
+
+E_Object.s: E_Object.cpp.s
+
+.PHONY : E_Object.s
+
+# target to generate assembly for a file
+E_Object.cpp.s:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Object.cpp.s
+.PHONY : E_Object.cpp.s
+
+E_Renderer.o: E_Renderer.cpp.o
+
+.PHONY : E_Renderer.o
+
+# target to build an object file
+E_Renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Renderer.cpp.o
+.PHONY : E_Renderer.cpp.o
+
+E_Renderer.i: E_Renderer.cpp.i
+
+.PHONY : E_Renderer.i
+
+# target to preprocess a source file
+E_Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Renderer.cpp.i
+.PHONY : E_Renderer.cpp.i
+
+E_Renderer.s: E_Renderer.cpp.s
+
+.PHONY : E_Renderer.s
+
+# target to generate assembly for a file
+E_Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Renderer.cpp.s
+.PHONY : E_Renderer.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +267,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... out"
+	@echo "... E_Camera.o"
+	@echo "... E_Camera.i"
+	@echo "... E_Camera.s"
 	@echo "... E_Manager.o"
 	@echo "... E_Manager.i"
 	@echo "... E_Manager.s"
+	@echo "... E_Object.o"
+	@echo "... E_Object.i"
+	@echo "... E_Object.s"
+	@echo "... E_Renderer.o"
+	@echo "... E_Renderer.i"
+	@echo "... E_Renderer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
