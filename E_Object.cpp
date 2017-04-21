@@ -13,5 +13,5 @@ E_Object::~E_Object()
 
 void E_Object::Update()
 {
-    std::cout << "Object Update" << std::endl;
+    
 }

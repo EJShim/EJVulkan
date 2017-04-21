@@ -19,7 +19,17 @@ int main()
     renderer->AddObject(obj);
     renderer->AddObject(obj1);
 
-    renderer->Render();
+
+    while (!glfwWindowShouldClose(renderer->GetWindow())) {
+        glfwPollEvents();
+
+        renderer->Render();
+    }
+    //
+    vkDeviceWaitIdle(renderer->GetDevice());
+
+    glfwDestroyWindow(renderer->GetWindow());
+    glfwTerminate();
 
 
     //Previous Code

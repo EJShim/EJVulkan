@@ -88,7 +88,7 @@ protected:
     VDeleter<VkDescriptorSetLayout> m_descriptorSetLayout{m_logicalDevice, vkDestroyDescriptorSetLayout};
 
     //Pipeline layout
-    VDeleter<VkPipelineLayout> pipelineLayout{m_logicalDevice, vkDestroyPipelineLayout};
+    VDeleter<VkPipelineLayout> m_pipelineLayout{m_logicalDevice, vkDestroyPipelineLayout};
         VDeleter<VkPipeline> m_graphicsPipeline{m_logicalDevice, vkDestroyPipeline};
 
     //Command pool
@@ -96,10 +96,28 @@ protected:
     std::vector<VkCommandBuffer> m_commandBuffers;
 
 
+    //Vertex Buffer
+    VDeleter<VkBuffer> m_vertexBuffer{m_logicalDevice, vkDestroyBuffer};
+    VDeleter<VkDeviceMemory> m_vertexBufferMemory{m_logicalDevice, vkFreeMemory};
+    VDeleter<VkBuffer> m_indexBuffer{m_logicalDevice, vkDestroyBuffer};
+    VDeleter<VkDeviceMemory> m_indexBufferMemory{m_logicalDevice, vkFreeMemory};
+
+    //Uniform Buffer
+    VDeleter<VkBuffer> m_uniformStagingBuffer{m_logicalDevice, vkDestroyBuffer};
+    VDeleter<VkDeviceMemory> m_uniformStagingBufferMemory{m_logicalDevice, vkFreeMemory};
+    VDeleter<VkBuffer> m_uniformBuffer{m_logicalDevice, vkDestroyBuffer};
+    VDeleter<VkDeviceMemory> m_uniformBufferMemory{m_logicalDevice, vkFreeMemory};
+    E_UBO m_ubo;
 
 
+    //Descriptor pool
+    VDeleter<VkDescriptorPool> m_descriptorPool{m_logicalDevice, vkDestroyDescriptorPool};
+    VkDescriptorSet m_descriptorSet;
 
 
+    //Semaphore
+    VDeleter<VkSemaphore> m_imageAvailableSemaphore{m_logicalDevice, vkDestroySemaphore};
+    VDeleter<VkSemaphore> m_renderFinishedSemaphore{m_logicalDevice, vkDestroySemaphore};
 
 protected:
     //Initialize Functions
@@ -122,14 +140,21 @@ protected:
     void CreateCommandPool();
 
 
-    ////Vertex Buffer
+    ////Create Vertex and Uniform Buffer
     void CreateVertexBuffer();
-    void CreateBuffer(VkDeviceSize size, VkBufferUsageFlags usage, VkMemoryPropertyFlags properties, VDeleter<VkBuffer>& buffer, VDeleter<VkDeviceMemory>& bufferMemory);
-    void CopyBuffer(VkBuffer srcBuffer, VkBuffer dstBuffer, VkDeviceSize size);
     void CreateIndexBuffer();
     void CreateUniformBuffer();
+
+
     void CreateDescriptorPool();
     void CreateDescriptorSet();
+
+    void CreateCommandBuffers();
+    void CreateSemaphores();
+
+    void UpdateUniform();
+    void DrawFrame();
+
 
 protected:
     //Module Functions
@@ -151,7 +176,16 @@ protected:
     void CreateShaderModule(const std::vector<char>& code, VDeleter<VkShaderModule>& shaderModule);
 
 
+    //Create and Copy Buffer
+    uint32_t findMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags properties);
+    void CreateBuffer(VkDeviceSize size, VkBufferUsageFlags usage, VkMemoryPropertyFlags properties, VDeleter<VkBuffer>& buffer, VDeleter<VkDeviceMemory>& bufferMemory);
+    void CopyBuffer(VkBuffer srcBuffer, VkBuffer dstBuffer, VkDeviceSize size);
+
+
 public:
+    GLFWwindow* GetWindow(){return m_window;}
+    VDeleter<VkDevice> GetDevice(){return m_logicalDevice;}
+
     //Caemra Functions
     void SetCamera(E_Camera* cam);
     E_Camera* GetCamera(){return m_camera;}

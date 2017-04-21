@@ -1,8 +1,11 @@
 #pragma once
+#define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <array>
+#include <vector>
+
 
 struct QueueFamilyIndices
 {
@@ -49,4 +52,11 @@ struct E_VAO{
 
        return attributeDescriptions;
    }
+};
+
+struct E_UBO{
+    glm::mat4 model;
+    glm::mat4 view;
+    glm::mat4 proj;
+    float time;
 };
