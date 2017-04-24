@@ -20,7 +20,7 @@ private:
     static const int HEIGHT = 800;
 
     struct Vertex{
-        glm::vec2 pos;
+        glm::vec3 pos;
         glm::vec3 color;
 
         static VkVertexInputBindingDescription getBindingDescription() {
@@ -111,7 +111,7 @@ protected:
     void CreateSwapChain();
     void CreateImageViews();
     void CreateRenderPass();
-    
+
     void CreateDescriptorSetLayout();
     void CreateGraphicsPipeLine();
     void CreateFrameBuffers();
@@ -190,10 +190,10 @@ public:
 
 
     const std::vector<Vertex> vertices = {
-        {{-0.5f, -0.5f}, {1.0f, 0.0f, 0.0f}},
-        {{0.5f, -0.5f}, {0.0f, 1.0f, 0.0f}},
-        {{0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}},
-        {{-0.5f, 0.5f}, {0.0f, 0.5f, 1.0f}}
+        {{-0.5f, -0.5f, 0.0f}, {1.0f, 0.0f, 0.0f}},
+        {{0.5f, -0.5f, 0.0f}, {0.0f, 1.0f, 0.0f}},
+        {{0.5f, 0.5f, 0.0f}, {0.0f, 0.0f, 1.0f}},
+        {{-0.5f, 0.5f, 0.0f}, {0.0f, 0.5f, 1.0f}}
     };
 
 

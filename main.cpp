@@ -8,7 +8,7 @@
 int main()
 {
     E_Object* obj = new E_Object();
-    E_Object* obj1 = new E_Object();
+    // E_Object* obj1 = new E_Object();
 
     E_Camera* camera = new E_Camera();
 
@@ -17,7 +17,7 @@ int main()
     renderer->SetCamera(camera);
 
     renderer->AddObject(obj);
-    renderer->AddObject(obj1);
+    // renderer->AddObject(obj1);
 
 
     while (!glfwWindowShouldClose(renderer->GetWindow())) {

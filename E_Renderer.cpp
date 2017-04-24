@@ -536,10 +536,6 @@ void E_Renderer::CreateUniformBuffer()
     int numObjects = m_objectList.size();
     if(numObjects == 0) return;
 
-    // m_ubo.model = m_objectList[0]->GetTransform();
-    // m_ubo.view = m_camera->GetViewTransform();
-    // m_ubo.proj = m_camera->GetProjectionTransform();
-
     VkDeviceSize bufferSize = sizeof(E_UBO);
 
     CreateBuffer(bufferSize, VK_BUFFER_USAGE_TRANSFER_SRC_BIT, VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT, m_uniformStagingBuffer, m_uniformStagingBufferMemory);
@@ -708,10 +704,12 @@ void E_Renderer::UpdateUniform()
     auto currentTime = std::chrono::high_resolution_clock::now();
     float time = std::chrono::duration_cast<std::chrono::milliseconds>(currentTime - startTime).count() / 1000.0f;
 
+    //Update Model
+    m_objectList[0]->SetTransform( glm::rotate(m_objectList[0]->GetTransform(),  glm::radians(0.5f), glm::vec3(0.0f, 0.0f, 1.0f))  );
 
 
     E_UBO ubo = {};
-    ubo.model = glm::rotate(m_objectList[0]->GetTransform(), time * glm::radians(50.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    ubo.model = m_objectList[0]->GetTransform();
     ubo.view = m_camera->GetViewTransform();
     ubo.proj = m_camera->GetProjectionTransform();
     ubo.proj[1][1] *= -1;
