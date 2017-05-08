@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.5.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ej/Documents/EJVulkan
+CMAKE_SOURCE_DIR = /Users/ej/documents/EJVulkan
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ej/Documents/EJVulkan/build
+CMAKE_BINARY_DIR = /Users/ej/documents/EJVulkan/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ej/Documents/EJVulkan/build/CMakeFiles /Users/ej/Documents/EJVulkan/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ej/documents/EJVulkan/build/CMakeFiles /Users/ej/documents/EJVulkan/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ej/Documents/EJVulkan/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ej/documents/EJVulkan/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,32 +231,32 @@ E_Renderer.cpp.s:
 	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/E_Renderer.cpp.s
 .PHONY : E_Renderer.cpp.s
 
-main.o: main.cpp.o
+assignment_EJ.o: assignment_EJ.cpp.o
 
-.PHONY : main.o
+.PHONY : assignment_EJ.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/main.cpp.o
-.PHONY : main.cpp.o
+assignment_EJ.cpp.o:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/assignment_EJ.cpp.o
+.PHONY : assignment_EJ.cpp.o
 
-main.i: main.cpp.i
+assignment_EJ.i: assignment_EJ.cpp.i
 
-.PHONY : main.i
+.PHONY : assignment_EJ.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/main.cpp.i
-.PHONY : main.cpp.i
+assignment_EJ.cpp.i:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/assignment_EJ.cpp.i
+.PHONY : assignment_EJ.cpp.i
 
-main.s: main.cpp.s
+assignment_EJ.s: assignment_EJ.cpp.s
 
-.PHONY : main.s
+.PHONY : assignment_EJ.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/main.cpp.s
-.PHONY : main.cpp.s
+assignment_EJ.cpp.s:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/assignment_EJ.cpp.s
+.PHONY : assignment_EJ.cpp.s
 
 # Help Target
 help:
@@ -279,9 +279,9 @@ help:
 	@echo "... E_Renderer.o"
 	@echo "... E_Renderer.i"
 	@echo "... E_Renderer.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... assignment_EJ.o"
+	@echo "... assignment_EJ.i"
+	@echo "... assignment_EJ.s"
 .PHONY : help
 
 

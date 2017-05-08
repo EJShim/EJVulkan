@@ -30,7 +30,8 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 # Set output path
 # ------------------------------------------------------------------------------
 add_executable(out
-main.cpp
+assignment_EJ.cpp
+# main.cpp
 E_Manager.h
 E_Manager.cpp
 E_Renderer.h

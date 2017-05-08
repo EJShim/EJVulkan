@@ -1,5 +1,5 @@
 #pragma once
-#define GLFW_INCLUDE_VULKAN
+#include <vulkan/vulkan.h>
 #include <GLFW/glfw3.h>
 #include "VDeleter.hpp"
 
@@ -89,7 +89,7 @@ protected:
 
     //Pipeline layout
     VDeleter<VkPipelineLayout> m_pipelineLayout{m_logicalDevice, vkDestroyPipelineLayout};
-        VDeleter<VkPipeline> m_graphicsPipeline{m_logicalDevice, vkDestroyPipeline};
+    VDeleter<VkPipeline> m_graphicsPipeline{m_logicalDevice, vkDestroyPipeline};
 
     //Command pool
     VDeleter<VkCommandPool> m_commandPool{m_logicalDevice, vkDestroyCommandPool};
@@ -119,6 +119,12 @@ protected:
     VDeleter<VkSemaphore> m_imageAvailableSemaphore{m_logicalDevice, vkDestroySemaphore};
     VDeleter<VkSemaphore> m_renderFinishedSemaphore{m_logicalDevice, vkDestroySemaphore};
 
+
+    ///Image View
+    VDeleter<VkImage> m_depthImage{m_logicalDevice, vkDestroyImage};
+    VDeleter<VkDeviceMemory> m_depthImageMemory{m_logicalDevice, vkFreeMemory};
+    VDeleter<VkImageView> m_depthImageView{m_logicalDevice, vkDestroyImageView};
+
 protected:
     //Initialize Functions
     void InitWindow();
@@ -129,6 +135,8 @@ protected:
     void CreateSurface();
     void PickPhysicalDevice();
     void CreateLogicalDevice();
+
+
     void CreateSwapChain();
     void CreateImageViews();
     void CreateRenderPass();
@@ -139,6 +147,10 @@ protected:
     void CreateFrameBuffers();
     void CreateCommandPool();
 
+    void CreateDepthResource();
+
+
+    void UpdateState();
 
     ////Create Vertex and Uniform Buffer
     void CreateVertexBuffer();
@@ -180,6 +192,20 @@ protected:
     uint32_t findMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags properties);
     void CreateBuffer(VkDeviceSize size, VkBufferUsageFlags usage, VkMemoryPropertyFlags properties, VDeleter<VkBuffer>& buffer, VDeleter<VkDeviceMemory>& bufferMemory);
     void CopyBuffer(VkBuffer srcBuffer, VkBuffer dstBuffer, VkDeviceSize size);
+
+
+    //Depth
+    void CreateImage(uint32_t width, uint32_t height, VkFormat format, VkImageTiling tiling, VkImageUsageFlags usage, VkMemoryPropertyFlags properties, VDeleter<VkImage>& image, VDeleter<VkDeviceMemory>& imageMemory);
+
+    void CreateImageView(VkImage image, VkFormat format, VkImageAspectFlags aspectFlags, VDeleter<VkImageView>& imageView);
+
+    VkFormat FindDepthFormat();
+    VkFormat FindSupportedFormat(const std::vector<VkFormat>& candidates, VkImageTiling tiling, VkFormatFeatureFlags features);
+    void TransitionImageLayout(VkImage image, VkFormat format, VkImageLayout oldLayout, VkImageLayout newLayout);
+    VkCommandBuffer BeginSingleTimeCommands();
+    void EndSingleTimeCommands(VkCommandBuffer commandBuffer);
+
+
 
 
 public:

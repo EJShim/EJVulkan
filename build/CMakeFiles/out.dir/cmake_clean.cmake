@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/out.dir/main.cpp.o"
+  "CMakeFiles/out.dir/assignment_EJ.cpp.o"
   "CMakeFiles/out.dir/E_Manager.cpp.o"
   "CMakeFiles/out.dir/E_Renderer.cpp.o"
   "CMakeFiles/out.dir/E_Camera.cpp.o"

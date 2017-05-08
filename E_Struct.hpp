@@ -26,8 +26,9 @@ struct SwapChainSupportDetails
 
 
 struct E_VAO{
-    glm::vec3 pos;
-    glm::vec3 color;
+    glm::vec3 position;
+	glm::vec3 normal;
+	glm::vec2 texCoord;
 
     static VkVertexInputBindingDescription getBindingDescription() {
         VkVertexInputBindingDescription bindingDescription = {};
@@ -37,18 +38,23 @@ struct E_VAO{
         return bindingDescription;
     }
 
-    static std::array<VkVertexInputAttributeDescription, 2> getAttributeDescriptions() {
-       std::array<VkVertexInputAttributeDescription, 2> attributeDescriptions = {};
+    static std::array<VkVertexInputAttributeDescription, 3> getAttributeDescriptions() {
+       std::array<VkVertexInputAttributeDescription, 3> attributeDescriptions = {};
 
        attributeDescriptions[0].binding = 0;
        attributeDescriptions[0].location = 0;
        attributeDescriptions[0].format = VK_FORMAT_R32G32_SFLOAT;
-       attributeDescriptions[0].offset = offsetof(E_VAO, pos);
+       attributeDescriptions[0].offset = offsetof(E_VAO, position);
 
        attributeDescriptions[1].binding = 0;
        attributeDescriptions[1].location = 1;
        attributeDescriptions[1].format = VK_FORMAT_R32G32B32_SFLOAT;
-       attributeDescriptions[1].offset = offsetof(E_VAO, color);
+       attributeDescriptions[1].offset = offsetof(E_VAO, normal);
+
+       attributeDescriptions[2].binding = 0;
+       attributeDescriptions[2].location = 2;
+       attributeDescriptions[2].format = VK_FORMAT_R32G32B32_SFLOAT;
+       attributeDescriptions[2].offset = offsetof(E_VAO, texCoord);
 
        return attributeDescriptions;
    }

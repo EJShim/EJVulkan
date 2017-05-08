@@ -1,3 +1,3 @@
-/Users/ej/Documents/EJVulkan/build/CMakeFiles/edit_cache.dir
-/Users/ej/Documents/EJVulkan/build/CMakeFiles/rebuild_cache.dir
-/Users/ej/Documents/EJVulkan/build/CMakeFiles/out.dir
+/Users/ej/documents/EJVulkan/build/CMakeFiles/edit_cache.dir
+/Users/ej/documents/EJVulkan/build/CMakeFiles/rebuild_cache.dir
+/Users/ej/documents/EJVulkan/build/CMakeFiles/out.dir
